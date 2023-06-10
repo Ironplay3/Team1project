@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyScript : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] NavMeshAgent navAgent;
     [SerializeField] Animator animator;
     private Transform player;
     private Vector3 startPosition;
- 
+
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
@@ -41,7 +41,7 @@ public class EnemyScript : MonoBehaviour
         else
         {
             navAgent.destination = startPosition;
-         
+
 
         }
         if (navAgent.destination == startPosition)
