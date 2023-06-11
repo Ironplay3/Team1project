@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class BossScript : MonoBehaviour
 {
     [SerializeField] NavMeshAgent navAgent;
     [SerializeField] Animator animator;
@@ -24,10 +24,10 @@ public class Enemy : MonoBehaviour
     {
 
 
-        if (Vector3.Distance(transform.position, player.position) <= 10)
+        if (Vector3.Distance(transform.position, player.position) <= 30)
         {
             navAgent.destination = player.transform.position;
-            if (Vector3.Distance(transform.position, player.position) <= 2)
+            if (Vector3.Distance(transform.position, player.position) <= 5)
             {
                 animator.SetBool("isAttacking", true);
 
