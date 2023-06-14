@@ -9,10 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
-            light1.enabled = !light1.enabled;
-
-
+     
 
     }
 }
