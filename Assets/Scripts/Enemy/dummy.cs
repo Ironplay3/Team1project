@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class BossScript : MonoBehaviour
+public class dummy : MonoBehaviour
 {
     [SerializeField] NavMeshAgent navAgent;
     [SerializeField] Animator animator;
     private Transform player;
     private Vector3 startPosition;
-    [SerializeField] GameObject bossHealth;
 
     void Start()
     {
@@ -25,12 +24,11 @@ public class BossScript : MonoBehaviour
     {
 
 
-        if (Vector3.Distance(transform.position, player.position) <= 30)
+        if (Vector3.Distance(transform.position, player.position) <= 10)
         {
             navAgent.destination = player.transform.position;
             if (Vector3.Distance(transform.position, player.position) <= 3)
             {
-                bossHealth .SetActive(true);    
                 animator.SetBool("isAttacking", true);
                 navAgent.stoppingDistance = 2;
             }
@@ -39,7 +37,6 @@ public class BossScript : MonoBehaviour
                 animator.SetBool("isAttacking", false);
                 animator.SetBool("isWalking", true);
                 navAgent.stoppingDistance = 0;
-                bossHealth.SetActive(true);
             }
         }
         else
