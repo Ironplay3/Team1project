@@ -9,6 +9,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] Animator animator;
     private Transform player;
     private Vector3 startPosition;
+    [SerializeField] GameObject health;
 
     void Start()
     {
@@ -30,12 +31,13 @@ public class BossScript : MonoBehaviour
             if (Vector3.Distance(transform.position, player.position) <= 5)
             {
                 animator.SetBool("isAttacking", true);
-
+                health.SetActive(true);
             }
             else
             {
                 animator.SetBool("isAttacking", false);
                 animator.SetBool("isWalking", true);
+              
             }
         }
         else
