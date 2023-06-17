@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     [SerializeField] HealthBar healthBar;
+    [SerializeField] Animator animator;
     private int currentHealth;
 
     void Start()
@@ -21,7 +22,7 @@ public class Health : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            animator.SetBool("isDead", true);
         }
     }
 }
