@@ -45,43 +45,37 @@ public class WeaponSwitching : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >= 2)
         {
             selectedWeapon = 1;
-            hand.SetBool("isSnap", true)  ;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && transform.childCount >= 3)
         {
             selectedWeapon = 2;
-            hand.SetBool("isSnap", true);
 
         }
         if (Input.GetKeyDown(KeyCode.Alpha4) && transform.childCount >= 4)
         {
             selectedWeapon = 3;
-            hand.SetBool("isSnap", true);
         }
         if (Input.GetKeyDown(KeyCode.Alpha5) && transform.childCount >= 5)
         {
             selectedWeapon = 4;
-            hand.SetBool("isSnap", true);
         }
         if (Input.GetKeyDown(KeyCode.Alpha6) && transform.childCount >= 6)
         {
             selectedWeapon = 5;
-            hand.SetBool("isSnap", true);
         }
         if (Input.GetKeyDown(KeyCode.Alpha7) && transform.childCount >= 7)
         {
             selectedWeapon = 6;
-            hand.SetBool("isSnap", true);
         }
         if (Input.GetKeyDown(KeyCode.Alpha8) && transform.childCount >= 8)
         {
             selectedWeapon = 7;
-            hand.SetBool("isSnap", true);
+         
         }
         if (Input.GetKeyDown(KeyCode.Alpha9) && transform.childCount >= 9)
         {
             selectedWeapon = 8;
-            hand.SetBool("isSnap", true);
+           
         }
         
 
@@ -100,11 +94,13 @@ public class WeaponSwitching : MonoBehaviour
             if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
+                hand.SetTrigger("isSnap");
+                
             }
             else
             {
                 weapon.gameObject.SetActive(false);
-                
+              
             }
             i++;
         }
