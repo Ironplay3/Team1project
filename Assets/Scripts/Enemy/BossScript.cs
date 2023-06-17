@@ -9,7 +9,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] Animator animator;
     private Transform player;
     private Vector3 startPosition;
-    [SerializeField] GameObject bossHealth;
+    [SerializeField] GameObject health;
 
     void Start()
     {
@@ -28,30 +28,28 @@ public class BossScript : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= 30)
         {
             navAgent.destination = player.transform.position;
-            if (Vector3.Distance(transform.position, player.position) <= 3)
+            if (Vector3.Distance(transform.position, player.position) <= 5)
             {
-                bossHealth .SetActive(true);    
                 animator.SetBool("isAttacking", true);
-                navAgent.stoppingDistance = 2;
+                health.SetActive(true);
             }
             else
             {
                 animator.SetBool("isAttacking", false);
                 animator.SetBool("isWalking", true);
-                navAgent.stoppingDistance = 0;
-                bossHealth.SetActive(true);
+              
             }
         }
         else
         {
             navAgent.destination = startPosition;
-            if (Vector3.Distance(transform.position, startPosition) <= 0.5f)
-            {
-                animator.SetBool("isWalking", false);
 
-            }
 
         }
+        if (navAgent.destination == startPosition)
+        {
+            animator.SetBool("isWalking", false);
 
+        }
     }
 }
