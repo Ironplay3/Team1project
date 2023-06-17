@@ -7698,6 +7698,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+  animator: {fileID: 0}
+  navAgent: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &1095595532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23302,6 +23307,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1000
   healthBar: {fileID: 1855365561927225482}
+<<<<<<< Updated upstream
+=======
+  animator: {fileID: 0}
+  navAgent: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!23 &445612675345659364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23532,6 +23542,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 500
   healthBar: {fileID: 1855365561927225482}
+<<<<<<< Updated upstream
+=======
+  animator: {fileID: 0}
+  navAgent: {fileID: 0}
+--- !u!137 &627021131558109475
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674573684991968019}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b3ad386aba28716448079dcf67d7aede, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 0d3c605385d6d9547a1e3f24e8248962, type: 3}
+  m_Bones:
+  - {fileID: 668844147669438077}
+  - {fileID: 673277044245428397}
+  - {fileID: 672733952659801863}
+  - {fileID: 669302608449832131}
+  - {fileID: 672771706121085359}
+  - {fileID: 668939464488561013}
+  - {fileID: 673065224952604163}
+  - {fileID: 669177593620321899}
+  - {fileID: 669220140043251677}
+  - {fileID: 673109551956941919}
+  - {fileID: 673196368120682709}
+  - {fileID: 669117270243349769}
+  - {fileID: 668815165277869171}
+  - {fileID: 669297253491101395}
+  - {fileID: 668848646778971865}
+  - {fileID: 672956945193193259}
+  - {fileID: 672943551493715067}
+  - {fileID: 672883258081374363}
+  - {fileID: 669048441376477573}
+  - {fileID: 669030202026949503}
+  - {fileID: 668832774283854767}
+  - {fileID: 672984467733877961}
+  - {fileID: 669343477267132507}
+  - {fileID: 673285674316187191}
+  - {fileID: 673226039601263647}
+  - {fileID: 669290738242271255}
+  - {fileID: 669333936915212143}
+  - {fileID: 672991255659492303}
+  - {fileID: 673112474882086863}
+  - {fileID: 669063180936103227}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 668844147669438077}
+  m_AABB:
+    m_Center: {x: -0.446875, y: 0.3599043, z: 0}
+    m_Extent: {x: 0.7597805, y: 0.7337334, z: 0.7809485}
+  m_DirtyAABB: 0
+>>>>>>> Stashed changes
 --- !u!1 &657784865973901534
 GameObject:
   m_ObjectHideFlags: 0
@@ -25811,6 +25909,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedWeapon: 0
   hand: {fileID: 4355913580051058643}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &2969375003710971699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4614130618223639874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3e8ead0a324fb48acec6e2b9468f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 4898898371598684314}
+  animator: {fileID: 0}
+  navAgent: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1 &2980436067595025653
 GameObject:
   m_ObjectHideFlags: 0
@@ -25857,6 +25974,45 @@ Transform:
   m_Father: {fileID: 1318740962020442529}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &3017857602775968703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675503356712531515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3e8ead0a324fb48acec6e2b9468f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  healthBar: {fileID: 312476439297033660}
+  animator: {fileID: 0}
+  navAgent: {fileID: 0}
+--- !u!224 &3054339950868558061
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5093716389704270837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6222487290284015668}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
 --- !u!1 &3093406263232257772
 GameObject:
   m_ObjectHideFlags: 0
@@ -27617,7 +27773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9085514611011458022, guid: c71f1a4099c7f1c4e8330932082c3714, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 267.074
+=======
+      value: 264.45
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 9085514611011458022, guid: c71f1a4099c7f1c4e8330932082c3714, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27625,7 +27785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9085514611011458022, guid: c71f1a4099c7f1c4e8330932082c3714, type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< Updated upstream
       value: 171.698
+=======
+      value: 166.99
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 9085514611011458022, guid: c71f1a4099c7f1c4e8330932082c3714, type: 3}
       propertyPath: m_LocalRotation.w
