@@ -8,7 +8,7 @@ public GameObject Camera;
 public float distance = 15f;
 GameObject currentWeapon;
 bool canPickUp;
-   
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)) PickUp();
@@ -31,6 +31,7 @@ bool canPickUp;
                 currentWeapon.transform.localPosition = Vector3.zero;
                 currentWeapon.transform.localEulerAngles = new Vector3(0f, 0f, 0f);
                 canPickUp = true;
+               
             }
         }
     }
