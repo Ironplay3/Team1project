@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     [SerializeField] HealthBar healthBar;
     [SerializeField] Animator animator;
+    [SerializeField] NavMeshAgent navAgent;
     private int currentHealth;
+
 
     void Start()
     {
@@ -23,6 +27,8 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             animator.SetBool("isDead", true);
+            Destroy(navAgent);
+            
         }
     }
 }
