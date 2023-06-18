@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class Health1 : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     [SerializeField] HealthBar healthBar;
-  
+   
     private int currentHealth;
 
 

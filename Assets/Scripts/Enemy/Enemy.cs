@@ -5,8 +5,12 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] int weaponDamage;
+    [SerializeField] float weaponRange;
+    [SerializeField] Transform rayOrigin;
     [SerializeField] NavMeshAgent navAgent;
     [SerializeField] Animator animator;
+    
     private Transform player;
     private Vector3 startPosition;
 
@@ -18,7 +22,16 @@ public class Enemy : MonoBehaviour
         startPosition = transform.position;
 
     }
+    public void Hit()
+    {
+        RaycastHit HitInfo;
 
+        if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out HitInfo, weaponRange))
+        {
+            if (HitInfo.transform.gameObject.GetComponent<Health1>())
+                HitInfo.transform.gameObject.GetComponent<Health1>().GetDamage(weaponDamage);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -31,12 +44,14 @@ public class Enemy : MonoBehaviour
             {
                 animator.SetBool("isAttacking", true);
                 navAgent.stoppingDistance = 2;
+                
             }
             else
             {
                 animator.SetBool("isAttacking", false);
                 animator.SetBool("isWalking", true);
                 navAgent.stoppingDistance = 0;
+                
             }
         }
         else
@@ -45,7 +60,7 @@ public class Enemy : MonoBehaviour
             if (Vector3.Distance(transform.position, startPosition) <= 0.5f)
             {
                 animator.SetBool("isWalking", false);
-
+               
             }
 
         }

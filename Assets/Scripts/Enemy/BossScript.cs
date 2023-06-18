@@ -5,12 +5,24 @@ using UnityEngine.AI;
 
 public class BossScript : MonoBehaviour
 {
+    [SerializeField] int weaponDamage;
+    [SerializeField] float weaponRange;
+    [SerializeField] Transform rayOrigin;
     [SerializeField] NavMeshAgent navAgent;
     [SerializeField] Animator animator;
     private Transform player;
     private Vector3 startPosition;
     [SerializeField] GameObject health;
+    public void Hit()
+    {
+        RaycastHit HitInfo;
 
+        if (Physics.Raycast(rayOrigin.position, rayOrigin.forward, out HitInfo, weaponRange))
+        {
+            if (HitInfo.transform.gameObject.GetComponent<Health1>())
+                HitInfo.transform.gameObject.GetComponent<Health1>().GetDamage(weaponDamage);
+        }
+    }
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
